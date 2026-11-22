@@ -1,0 +1,1110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>body{margin:0}img{max-width:100%}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+</head>
+<body>
+<title>Bigfoot's Trap House Concept</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Concept mockup of a website for Bigfoot's Trap House. Not the dispensary's official website.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: trailhead signage meets a premium counter. A night-forest hero with a pine treeline, then calm cream sections with signage-style condensed headings. Brand colors come from the Bigfoot badge. */
+:root{
+  --bg:#F4EFDF; --surface:#FFFDF6; --surface-2:#EDE6D0; --ink:#17221A; --muted:#5A604B; --line:#DDD4B7;
+  --brand:#24561F; --brand-hover:#1B4417; --on-brand:#FFF8E6;
+  --lime:#9CCB3B; --lime-ink:#132010;
+  --orange:#C75F24; --orange-ink:#A3481A; --bar:#B4521C; --on-bar:#FFF4E4;
+  --hero-bg:#1E4B1C; --hero-mid:#2A5D26; --hero-deep:#11300F; --hero-fg:#FBF3DC; --hero-muted:#C5D9AA; --hero-line:#3A7333;
+  --indica:#6A4A9E; --sativa:#B04A12; --hybrid:#2E6B2C; --cbd:#2A6687;
+  --t-myrcene:#6B7D27; --t-limonene:#C9A000; --t-caryophyllene:#8A4B2A; --t-pinene:#2F7A55;
+  --t-linalool:#7B5BB5; --t-terpinolene:#2A8A8A; --t-humulene:#9A7A2C;
+  --ok:#2E7D3A; --warn:#A3341F;
+  --shadow-sm:0 1px 2px rgba(23,34,26,.06);
+  --shadow:0 2px 4px rgba(23,34,26,.05), 0 12px 32px rgba(23,34,26,.09);
+  --display:"Lilita One","Arial Black",Impact,system-ui,sans-serif;
+  --head:"Barlow Condensed","Arial Narrow","Roboto Condensed",system-ui,sans-serif;
+  --body:"Barlow","Segoe UI",system-ui,-apple-system,sans-serif;
+  --r:14px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E150D; --surface:#152013; --surface-2:#1C2A19; --ink:#F1EAD3; --muted:#A8AD91; --line:#2A3925;
+    --brand:#9CCB3B; --brand-hover:#B2DA5C; --on-brand:#132010;
+    --lime:#A6D447; --lime-ink:#132010;
+    --orange:#E0773A; --orange-ink:#F0925C; --bar:#B4521C; --on-bar:#FFF4E4;
+    --hero-bg:#13320F; --hero-mid:#1C4318; --hero-deep:#0A1D08; --hero-fg:#FBF3DC; --hero-muted:#B4CB94; --hero-line:#2C5225;
+    --indica:#B49CF0; --sativa:#F09A5C; --hybrid:#A6D447; --cbd:#7DC2E2;
+    --t-myrcene:#A9BE55; --t-limonene:#E9CB3F; --t-caryophyllene:#D08A62; --t-pinene:#5FBF8B;
+    --t-linalool:#B19AE8; --t-terpinolene:#5FC7C7; --t-humulene:#D3B25E;
+    --ok:#8FD86A; --warn:#F08A72;
+    --shadow-sm:0 1px 2px rgba(0,0,0,.3);
+    --shadow:0 2px 4px rgba(0,0,0,.25), 0 12px 32px rgba(0,0,0,.35);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E150D; --surface:#152013; --surface-2:#1C2A19; --ink:#F1EAD3; --muted:#A8AD91; --line:#2A3925;
+  --brand:#9CCB3B; --brand-hover:#B2DA5C; --on-brand:#132010;
+  --lime:#A6D447; --lime-ink:#132010;
+  --orange:#E0773A; --orange-ink:#F0925C; --bar:#B4521C; --on-bar:#FFF4E4;
+  --hero-bg:#13320F; --hero-mid:#1C4318; --hero-deep:#0A1D08; --hero-fg:#FBF3DC; --hero-muted:#B4CB94; --hero-line:#2C5225;
+  --indica:#B49CF0; --sativa:#F09A5C; --hybrid:#A6D447; --cbd:#7DC2E2;
+  --t-myrcene:#A9BE55; --t-limonene:#E9CB3F; --t-caryophyllene:#D08A62; --t-pinene:#5FBF8B;
+  --t-linalool:#B19AE8; --t-terpinolene:#5FC7C7; --t-humulene:#D3B25E;
+  --ok:#8FD86A; --warn:#F08A72;
+  --shadow-sm:0 1px 2px rgba(0,0,0,.3);
+  --shadow:0 2px 4px rgba(0,0,0,.25), 0 12px 32px rgba(0,0,0,.35);
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+html{scroll-padding-top:84px}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased;font-synthesis:none}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--surface)}
+body.locked{overflow:hidden}
+h1,h2,h3{margin:0;text-wrap:balance;font-weight:700}
+p{margin:0}
+a{color:inherit}
+button,input,select{font:inherit;color:inherit}
+img{display:block}
+[hidden]{display:none !important}
+
+/* Mockup labels */
+.mockbar{background:var(--ink);color:var(--bg);font-size:14px;line-height:1.45}
+.mockbar .wrap{display:flex;justify-content:center;align-items:center;gap:6px 12px;flex-wrap:wrap;padding-block:10px;text-align:center}
+.mockbar b{font-family:var(--head);font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;background:var(--lime);color:var(--lime-ink);border-radius:999px;padding:2px 10px}
+.mock-pill{position:fixed;left:calc(14px + env(safe-area-inset-left,0px));bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:35;background:var(--ink);color:var(--bg);font-family:var(--head);font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:6px 12px;border-radius:999px;box-shadow:var(--shadow);pointer-events:none}
+:focus-visible{outline:2px solid var(--orange);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1200px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.num{font-variant-numeric:tabular-nums}
+.eyebrow{font-family:var(--head);font-weight:600;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--orange-ink)}
+.h2{font-family:var(--head);font-weight:700;text-transform:uppercase;font-size:clamp(34px,4.4vw,52px);line-height:1;letter-spacing:.005em;margin-top:8px}
+.section{padding-block:88px}
+.section-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,420px);gap:24px 48px;align-items:end;margin-bottom:36px}
+.section-head > p{color:var(--muted)}
+@media (max-width:820px){.section{padding-block:64px}.section-head{grid-template-columns:1fr}}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;border-radius:999px;padding:0 24px;font-weight:600;font-size:16px;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:background-color .15s ease,border-color .15s ease,transform .15s ease;white-space:nowrap}
+.btn:active{transform:translateY(1px)}
+.btn-lime{background:var(--lime);color:var(--lime-ink)}
+.btn-lime:hover{background:#B0D95A}
+.btn-outline-light{border-color:var(--hero-line);color:var(--hero-fg)}
+.btn-outline-light:hover{border-color:var(--hero-muted)}
+.btn-brand{background:var(--brand);color:var(--on-brand)}
+.btn-brand:hover{background:var(--brand-hover)}
+.btn-line{border-color:var(--line);background:var(--surface);color:var(--ink)}
+.btn-line:hover{border-color:var(--muted)}
+.btn-sm{min-height:38px;padding:0 16px;font-size:14.5px}
+
+/* Announcement bar */
+.topbar{background:var(--bar);color:var(--on-bar);font-size:14px;font-weight:500}
+.topbar .wrap{display:flex;justify-content:center;gap:10px 28px;flex-wrap:wrap;padding-block:8px;text-align:center}
+.topbar span{display:inline-flex;align-items:center;gap:8px}
+.topbar .dot{width:7px;height:7px;border-radius:50%;background:#9EE37A}
+@media (max-width:620px){.topbar .hide-sm{display:none}}
+
+/* Header */
+header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:25;background:var(--surface);border-bottom:1px solid var(--line);box-shadow:var(--shadow-sm)}
+.nav{display:flex;align-items:center;gap:28px;min-height:72px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+.logo img{width:48px;height:48px;object-fit:contain;flex:none}
+.logo b{font-family:var(--display);font-weight:400;font-size:21px;line-height:1;text-transform:uppercase;letter-spacing:.01em}
+.logo small{display:block;font-family:var(--head);font-weight:600;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.nav-links{display:flex;gap:26px;margin-left:auto}
+.nav-links a{text-decoration:none;font-weight:600;font-size:15.5px;color:var(--muted);padding-block:6px;border-bottom:2px solid transparent}
+.nav-links a:hover{color:var(--ink);border-color:var(--lime)}
+.nav-actions{display:flex;align-items:center;gap:10px}
+.bag-btn{position:relative}
+.bag-count{min-width:22px;height:22px;border-radius:999px;background:var(--orange);color:#fff;font-size:12.5px;font-weight:700;display:inline-grid;place-items:center;padding:0 6px}
+.menu-btn{display:none;width:44px;height:44px;border-radius:12px;border:1.5px solid var(--line);background:var(--surface);cursor:pointer;place-items:center}
+.mnav{border-top:1px solid var(--line);background:var(--surface)}
+.mnav .wrap{display:grid;padding-block:8px 16px}
+.mnav a{padding:12px 0;text-decoration:none;font-weight:600;font-size:17px;border-bottom:1px solid var(--line)}
+.mnav a:last-child{border-bottom:0}
+@media (max-width:900px){.nav-links,.call-btn{display:none}.nav-actions{margin-left:auto}.menu-btn{display:grid}}
+@media (min-width:901px){.mnav{display:none}}
+@media (max-width:420px){.logo small{display:none}.logo b{font-size:18px}.logo img{width:42px;height:42px}.bag-btn .lbl{display:none}}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;background:var(--hero-bg);color:var(--hero-fg)}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(800px 420px at 78% 8%, rgba(255,240,200,.09), transparent 70%);pointer-events:none}
+.hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:56px;align-items:center;padding-block:80px 172px}
+.hero .eyebrow{color:var(--lime)}
+.hero h1{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:clamp(42px,5vw,66px);line-height:.98;margin-top:18px;letter-spacing:.005em;text-shadow:0 4px 0 var(--hero-deep)}
+.hero h1 span{display:block}
+.hero h1 em{font-style:normal;color:var(--lime)}
+.hero .lede{margin-top:24px;max-width:46ch;font-size:19px;line-height:1.55;color:var(--hero-muted)}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.proof{display:flex;flex-wrap:wrap;gap:14px 28px;margin:36px 0 0;padding:24px 0 0;border-top:1px solid var(--hero-line);list-style:none}
+.proof li{display:flex;align-items:center;gap:10px;font-weight:600;font-size:15px}
+.proof svg{color:var(--lime);flex:none}
+.treeline{position:absolute;left:0;right:0;bottom:0;width:100%;height:170px;z-index:0;pointer-events:none}
+.treeline .back{fill:var(--hero-mid)}
+.treeline .front{fill:var(--hero-deep)}
+@media (max-width:900px){.hero-inner{grid-template-columns:1fr;gap:44px;padding-block:56px 150px}}
+
+/* Featured lot card */
+.lot{background:var(--surface);color:var(--ink);border-radius:18px;padding:26px;box-shadow:0 24px 60px rgba(0,0,0,.35);position:relative;min-width:0}
+.lot-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.lot .tag{font-family:var(--head);font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--orange-ink)}
+.lot h2{font-family:var(--head);font-weight:700;font-size:36px;line-height:1;text-transform:uppercase;margin-top:8px}
+.lot .sub{color:var(--muted);font-size:15px;margin-top:6px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:22px;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.stats div{padding:12px 14px;border-left:1px solid var(--line)}
+.stats div:first-child{border-left:0}
+.stats b{display:block;font-family:var(--head);font-size:28px;line-height:1.05;font-variant-numeric:tabular-nums}
+.stats span{font-size:12.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.terp-bars{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:10px}
+.terp-bars li{display:grid;grid-template-columns:112px minmax(0,1fr) 48px;align-items:center;gap:12px;font-size:14.5px}
+.terp-bars .bar{height:8px;background:var(--surface-2);border-radius:999px;overflow:hidden}
+.terp-bars .bar i{display:block;height:100%;border-radius:inherit;background:var(--tc);transform-origin:left;animation:grow 1.1s cubic-bezier(.2,.8,.2,1) both}
+.terp-bars li:nth-child(2) .bar i{animation-delay:.08s}
+.terp-bars li:nth-child(3) .bar i{animation-delay:.16s}
+.terp-bars li:nth-child(4) .bar i{animation-delay:.24s}
+.terp-bars .pct{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums;font-size:13.5px}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.lot-meta{display:grid;grid-template-columns:1fr 1fr;gap:6px 16px;margin-top:20px;padding-top:16px;border-top:1px solid var(--line);font-size:13.5px;color:var(--muted)}
+.lot-meta b{color:var(--ink);font-weight:600}
+.lot-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:22px;flex-wrap:wrap}
+.lot-foot .price{font-family:var(--head);font-weight:700;font-size:34px;line-height:1}
+.lot-foot .price small{font-family:var(--body);font-size:14px;color:var(--muted);font-weight:500;margin-left:4px}
+@media (max-width:420px){.lot{padding:20px}.terp-bars li{grid-template-columns:96px minmax(0,1fr) 44px}}
+
+/* Strain chip */
+.chip{--c:var(--hybrid);display:inline-flex;align-items:center;gap:6px;font-family:var(--head);font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 11px;border-radius:999px;color:var(--c);background:color-mix(in srgb,var(--c) 12%,transparent);border:1px solid color-mix(in srgb,var(--c) 30%,transparent);white-space:nowrap}
+.chip[data-t="indica"]{--c:var(--indica)} .chip[data-t="sativa"]{--c:var(--sativa)} .chip[data-t="hybrid"]{--c:var(--hybrid)} .chip[data-t="cbd"]{--c:var(--cbd)}
+
+/* Category tiles */
+.cats{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px}
+.cat{display:flex;flex-direction:column;gap:14px;align-items:flex-start;padding:20px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);cursor:pointer;text-align:left;transition:border-color .15s ease,transform .15s ease,box-shadow .15s ease}
+.cat:hover{border-color:var(--brand);transform:translateY(-2px);box-shadow:var(--shadow)}
+.cat .ic{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;background:color-mix(in srgb,var(--brand) 12%,transparent);color:var(--brand)}
+.cat b{font-family:var(--head);font-weight:700;font-size:21px;line-height:1.1;text-transform:uppercase;display:block}
+.cat .meta{display:block;font-size:14px;color:var(--muted);margin-top:4px}
+@media (max-width:1020px){.cats{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:520px){.cats{grid-template-columns:repeat(2,minmax(0,1fr))}.cat{padding:16px}}
+
+/* Specials */
+.specials{background:var(--surface);border-block:1px solid var(--line)}
+.week{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:12px}
+.day{display:flex;flex-direction:column;gap:8px;padding:18px 16px;border:1px solid var(--line);border-radius:var(--r);background:var(--bg);cursor:pointer;text-align:left;transition:border-color .15s ease}
+.day:hover{border-color:var(--muted)}
+.day .dn{font-family:var(--head);font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);display:flex;justify-content:space-between;gap:6px}
+.day b{font-family:var(--head);font-weight:700;font-size:20px;line-height:1.1;text-transform:uppercase}
+.day span.d{font-size:14px;color:var(--muted);line-height:1.45}
+.day.today{background:var(--hero-bg);border-color:var(--hero-bg);color:var(--hero-fg)}
+.day.today .dn{color:var(--lime)}
+.day.today span.d{color:var(--hero-muted)}
+.week-wrap{overflow-x:auto;padding-bottom:4px}
+@media (max-width:1020px){.week{grid-template-columns:repeat(7,200px)}}
+.fine{font-size:13.5px;color:var(--muted);margin-top:16px}
+
+/* Menu toolbar */
+.toolbar{display:grid;gap:16px;margin-bottom:28px}
+.tabs{display:flex;gap:4px;overflow-x:auto;border-bottom:1px solid var(--line);scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;border:0;background:transparent;padding:12px 14px;font-weight:600;font-size:15.5px;cursor:pointer;color:var(--muted);border-bottom:2.5px solid transparent;margin-bottom:-1px}
+.tab:hover{color:var(--ink)}
+.tab[aria-pressed="true"]{color:var(--ink);border-color:var(--orange)}
+.tab .n{font-size:12.5px;color:var(--muted);margin-left:6px;font-variant-numeric:tabular-nums}
+.filters{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.type-filter{display:flex;flex-wrap:wrap;gap:8px}
+.type-filter button{cursor:pointer;padding:7px 13px}
+.type-filter button[aria-pressed="false"]{color:var(--muted);background:transparent;border-color:var(--line)}
+.search{flex:1 1 240px;min-width:0;display:flex;align-items:center;gap:10px;border:1.5px solid var(--line);background:var(--surface);border-radius:999px;padding:0 16px;color:var(--muted)}
+.search input{border:0;background:transparent;padding:11px 0;width:100%;min-width:0;outline:none;color:var(--ink)}
+.search:focus-within{border-color:var(--brand)}
+.sort{border:1.5px solid var(--line);background:var(--surface);border-radius:999px;padding:11px 16px;font-weight:500}
+
+/* Product cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(262px,1fr));gap:18px}
+.card{--c:var(--hybrid);background:var(--surface);border:1px solid var(--line);border-radius:var(--r);display:flex;flex-direction:column;overflow:hidden;min-width:0;transition:box-shadow .15s ease,border-color .15s ease}
+.card:hover{box-shadow:var(--shadow);border-color:color-mix(in srgb,var(--c) 40%,var(--line))}
+.card[data-t="indica"]{--c:var(--indica)} .card[data-t="sativa"]{--c:var(--sativa)} .card[data-t="cbd"]{--c:var(--cbd)}
+.card-face{position:relative;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;padding:18px 18px 16px;background:color-mix(in srgb,var(--c) 10%,var(--surface));border-bottom:1px solid color-mix(in srgb,var(--c) 18%,var(--line));min-height:128px}
+.card-face .ic{color:var(--c);opacity:.9}
+.pot{text-align:right}
+.pot b{display:block;font-family:var(--head);font-weight:700;font-size:40px;line-height:.95;color:var(--ink);font-variant-numeric:tabular-nums}
+.pot span{font-size:12.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.card-badge{position:absolute;top:14px;right:14px;font-size:12.5px;font-weight:700;color:var(--orange-ink);background:var(--surface);border-radius:999px;padding:3px 10px;box-shadow:var(--shadow-sm)}
+.card-body{display:flex;flex-direction:column;gap:12px;padding:16px 18px 18px;flex:1}
+.card-title{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.card h3{font-family:var(--head);font-weight:700;font-size:25px;line-height:1.05;text-transform:uppercase}
+.card .brand{color:var(--muted);font-size:14px;margin-top:4px}
+.facts{font-size:13.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:2px 12px}
+.facts b{color:var(--ink);font-weight:600}
+.terps{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 14px;font-size:13.5px;color:var(--muted)}
+.terps li{display:inline-flex;align-items:center;gap:6px}
+.terps i{width:8px;height:8px;border-radius:50%;background:var(--tc)}
+.sizes{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:4px}
+.size{border:1.5px solid var(--line);background:transparent;border-radius:9px;padding:6px 11px;font-size:13.5px;font-weight:600;cursor:pointer;color:var(--muted)}
+.size:hover{color:var(--ink)}
+.size[aria-pressed="true"]{border-color:var(--ink);color:var(--ink);background:var(--surface-2)}
+.buy{display:flex;justify-content:space-between;align-items:center;gap:10px;padding-top:12px;border-top:1px solid var(--line)}
+.buy .price{font-family:var(--head);font-size:30px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.add{border:0;border-radius:999px;background:var(--brand);color:var(--on-brand);font-weight:600;font-size:15px;min-height:42px;padding:0 18px;cursor:pointer;transition:background-color .15s ease}
+.add:hover{background:var(--brand-hover)}
+.add.done{background:var(--orange);color:#fff}
+.empty{grid-column:1/-1;text-align:center;padding:56px 16px;color:var(--muted);border:1.5px dashed var(--line);border-radius:var(--r)}
+.empty b{display:block;color:var(--ink);font-size:18px;margin-bottom:4px}
+
+/* Learn */
+.learn{background:var(--surface);border-block:1px solid var(--line)}
+.learn-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:40px;align-items:start}
+.terp-guide{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.terp{border:1px solid var(--line);border-radius:var(--r);padding:18px;background:var(--bg);min-width:0}
+.terp h3{font-family:var(--head);font-weight:700;font-size:21px;text-transform:uppercase;display:flex;align-items:center;gap:10px}
+.terp h3 i{width:12px;height:12px;border-radius:50%;background:var(--tc)}
+.terp p{font-size:14.5px;color:var(--muted);margin-top:6px}
+.terp .also{font-size:13.5px;margin-top:10px;color:var(--ink)}
+.terp .also span{color:var(--muted)}
+.dose{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--bg)}
+.dose h3{font-family:var(--head);font-weight:700;font-size:26px;text-transform:uppercase;padding:22px 22px 6px}
+.dose > p{padding:0 22px 16px;color:var(--muted);font-size:15px}
+.table-scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:12px 22px;border-top:1px solid var(--line);vertical-align:top}
+th{font-family:var(--head);font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+td.n{white-space:nowrap;font-variant-numeric:tabular-nums}
+.tip{margin:0;padding:16px 22px;border-top:1px solid var(--line);font-size:15px;background:color-mix(in srgb,var(--lime) 14%,transparent)}
+@media (max-width:960px){.learn-grid{grid-template-columns:1fr}}
+
+/* Visit */
+.visit-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:20px}
+.place{position:relative;overflow:hidden;border-radius:18px;background:var(--hero-bg);color:var(--hero-fg);padding:32px;min-height:340px;display:flex;flex-direction:column;justify-content:space-between;gap:28px}
+.place canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.55}
+.place > *:not(canvas){position:relative}
+.place .eyebrow{color:var(--lime)}
+.place address{font-style:normal;font-family:var(--head);font-weight:700;font-size:clamp(30px,3.6vw,42px);line-height:1.05;text-transform:uppercase;margin-top:10px}
+.place .row{display:flex;flex-wrap:wrap;gap:10px}
+.clock{display:flex;align-items:center;gap:12px;font-size:16px;font-weight:600}
+.clock i{width:10px;height:10px;border-radius:50%;background:#7EE08F;box-shadow:0 0 0 5px rgba(126,224,143,.18)}
+.info{display:grid;gap:20px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px;min-width:0}
+.panel h3{font-family:var(--head);font-weight:700;font-size:22px;text-transform:uppercase;margin-bottom:12px}
+.hours-big{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.hours-big b{font-family:var(--display);font-weight:400;font-size:40px;line-height:1;color:var(--brand)}
+.hours-big span{color:var(--muted)}
+.contact{display:grid;gap:10px}
+.contact div{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.contact div:last-child{border-bottom:0;padding-bottom:0}
+.contact a{font-weight:600;text-decoration:none}
+.copy{border:1.5px solid var(--line);background:transparent;border-radius:999px;padding:4px 12px;font-size:13.5px;font-weight:600;cursor:pointer;color:var(--muted)}
+.copy:hover{color:var(--ink);border-color:var(--muted)}
+.bring{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.bring li{display:grid;grid-template-columns:24px 1fr;gap:10px;font-size:15.5px}
+.bring svg{margin-top:2px;color:var(--brand)}
+@media (max-width:900px){.visit-grid{grid-template-columns:1fr}.place{min-height:300px;padding:26px}}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:48px;align-items:start}
+.faq-side p{color:var(--muted);margin-top:16px;max-width:36ch}
+.faq-side .btn{margin-top:22px}
+details{border-top:1px solid var(--line)}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-weight:600;font-size:18px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";width:12px;height:12px;flex:none;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg) translateY(-3px);transition:transform .2s ease}
+details[open] summary::after{transform:rotate(225deg) translateY(-3px)}
+details p{padding:0 0 22px;color:var(--muted);max-width:65ch}
+@media (max-width:900px){.faq-grid{grid-template-columns:1fr;gap:24px}}
+
+/* Footer */
+footer{background:var(--hero-deep);color:var(--hero-muted);font-size:15px}
+footer .wrap{padding-block:64px 36px}
+.foot-grid{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:36px}
+footer .logo{color:var(--hero-fg)}
+footer .logo small{color:var(--hero-muted)}
+.tagline{font-family:var(--display);color:var(--lime);font-size:26px;line-height:1.1;text-transform:uppercase;margin-top:18px}
+footer h4{font-family:var(--head);font-weight:600;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--hero-fg);margin:0 0 14px}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+footer ul a{text-decoration:none}
+footer ul a:hover{color:var(--hero-fg)}
+.warnings{margin-top:48px;padding-top:24px;border-top:1px solid var(--hero-line);display:grid;gap:6px;font-size:13.5px}
+.warnings strong{color:var(--hero-fg);font-family:var(--head);font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;margin-bottom:4px}
+.legal{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 24px;margin-top:28px;font-size:13.5px}
+@media (max-width:900px){.foot-grid{grid-template-columns:1fr 1fr}.foot-brand{grid-column:1/-1}}
+@media (max-width:480px){.foot-grid{grid-template-columns:1fr}}
+
+/* Bag drawer */
+.scrim{position:fixed;inset:0;background:rgba(8,14,8,.5);z-index:40}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(440px,100%);z-index:41;background:var(--surface);display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);padding-right:env(safe-area-inset-right,0px);box-shadow:-20px 0 60px rgba(0,0,0,.25)}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;padding:20px 24px;border-bottom:1px solid var(--line)}
+.drawer-head h2{font-family:var(--head);font-weight:700;font-size:28px;text-transform:uppercase}
+.x{border:0;background:transparent;width:40px;height:40px;border-radius:10px;font-size:26px;line-height:1;cursor:pointer;color:var(--muted)}
+.x:hover{background:var(--surface-2)}
+.drawer-body{flex:1;overflow-y:auto;padding:20px 24px;display:flex;flex-direction:column;gap:16px}
+.line-item{display:grid;grid-template-columns:1fr auto;gap:8px 12px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.line-item .nm{font-weight:700;font-size:16.5px}
+.line-item .meta{font-size:13.5px;color:var(--muted)}
+.qty{display:inline-flex;align-items:center;border:1.5px solid var(--line);border-radius:999px;overflow:hidden;justify-self:start}
+.qty button{border:0;background:transparent;width:34px;height:32px;cursor:pointer;font-size:17px}
+.qty span{min-width:24px;text-align:center;font-weight:600;font-variant-numeric:tabular-nums}
+.li-price{text-align:right;font-weight:700;font-variant-numeric:tabular-nums}
+.totals{display:grid;gap:8px;font-size:15px}
+.totals div{display:flex;justify-content:space-between;gap:12px}
+.totals .sum{font-size:18px;font-weight:700;padding-top:8px;border-top:1px solid var(--line)}
+.demo-note{font-size:13.5px;color:var(--muted);background:var(--bg);border:1px dashed var(--line);border-radius:10px;padding:10px 14px}
+form.pickup{display:grid;gap:14px}
+.field{display:grid;gap:6px}
+.field label{font-size:14px;font-weight:600}
+.field input,.field select{border:1.5px solid var(--line);background:var(--bg);border-radius:10px;padding:11px 13px;width:100%}
+.field input:focus,.field select:focus{border-color:var(--brand);outline:none}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:14.5px}
+.check input{margin-top:4px;accent-color:var(--brand)}
+.err{color:var(--warn);font-size:14px;font-weight:500}
+.confirm{border:1px solid color-mix(in srgb,var(--ok) 45%,transparent);background:color-mix(in srgb,var(--ok) 10%,transparent);border-radius:var(--r);padding:20px}
+.confirm h3{font-family:var(--head);font-weight:700;font-size:24px;text-transform:uppercase}
+.confirm p{font-size:15px;margin-top:8px}
+.bag-empty{color:var(--muted);text-align:center;padding:40px 0 8px}
+
+/* Patient gate */
+.gate{position:fixed;inset:0;z-index:60;display:grid;place-items:center;padding:24px max(16px,env(safe-area-inset-right,0px)) 24px max(16px,env(safe-area-inset-left,0px));background:color-mix(in srgb,var(--hero-deep) 92%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);overflow-y:auto}
+.gate-card{background:var(--surface);color:var(--ink);border-radius:22px;padding:36px 30px 30px;max-width:440px;width:100%;text-align:center;box-shadow:0 30px 80px rgba(0,0,0,.4)}
+.gate-card img{width:112px;height:112px;margin:0 auto;object-fit:contain}
+.gate-card .eyebrow{margin-top:18px}
+.gate-card h2{font-family:var(--head);font-weight:700;font-size:34px;line-height:1.02;text-transform:uppercase;margin-top:8px}
+.gate-card p{color:var(--muted);margin-top:12px;font-size:15.5px}
+.gate-actions{display:grid;gap:10px;margin-top:26px}
+.gate-fine{font-size:13px !important;margin-top:20px !important}
+
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:12px 20px;border-radius:999px;font-weight:600;font-size:15px;z-index:50;box-shadow:var(--shadow);max-width:calc(100% - 32px);text-align:center}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none !important;transition:none !important}
+}
+</style>
+
+<!-- Patient gate -->
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+  <div class="gate-card">
+    <img src="bigfoot-logo.png" width="112" height="112" alt="Bigfoot's Trap House">
+    <div id="gate-ask">
+      <p class="eyebrow">Oklahoma medical patients only</p>
+      <h2 id="gate-title">Do you have a patient license?</h2>
+      <p>Oklahoma law limits dispensary sales to patients and caregivers with a valid OMMA license.</p>
+      <div class="gate-actions">
+        <button class="btn btn-brand" id="gate-yes" type="button">Yes, I have a license</button>
+        <button class="btn btn-line" id="gate-no" type="button">No, I don't</button>
+      </div>
+    </div>
+    <div id="gate-denied" hidden>
+      <p class="eyebrow">Almost there</p>
+      <h2>You'll need a patient license</h2>
+      <p>Apply online with the Oklahoma Medical Marijuana Authority (OMMA). Out-of-state patients can apply for a temporary license.</p>
+      <div class="gate-actions">
+        <a class="btn btn-brand" href="https://oklahoma.gov/omma.html">Apply with OMMA</a>
+        <button class="btn btn-line" id="gate-back" type="button">Go back</button>
+      </div>
+    </div>
+    <p class="gate-fine">We check your patient license and photo ID at the counter.</p>
+    <p class="gate-fine"><b>Concept mockup.</b> Not the official Bigfoot's Trap House website.</p>
+  </div>
+</div>
+
+<div class="mockbar" role="note">
+  <div class="wrap"><b>Concept mockup</b><span>A design preview for Bigfoot's Trap House. Not their official website. Products, prices and specials are samples.</span></div>
+</div>
+<div class="mock-pill" aria-hidden="true">Mockup</div>
+
+<div class="topbar">
+  <div class="wrap">
+    <span><i class="dot" aria-hidden="true"></i>Open 24 hours, 7 days a week</span>
+    <span class="hide-sm">OMMA patients and caregivers only</span>
+    <span class="hide-sm">1430 S George Nigh Expy, McAlester</span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="#top">
+      <img src="bigfoot-logo.png" width="48" height="48" alt="">
+      <span><b>Bigfoot's Trap House</b><small>McAlester, Oklahoma</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#shop">Shop</a>
+      <a href="#specials">Specials</a>
+      <a href="#learn">Learn</a>
+      <a href="#visit">Visit</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-line btn-sm call-btn" href="tel:+15807680326">(580) 768-0326</a>
+      <button class="btn btn-brand btn-sm bag-btn" id="bag-open" type="button" aria-label="Open pickup bag">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+        <span class="lbl">Bag</span><span class="bag-count" id="bag-count">0</span>
+      </button>
+      <button class="menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mnav">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="mnav" id="mnav" hidden aria-label="Mobile">
+    <div class="wrap">
+      <a href="#shop">Shop</a>
+      <a href="#specials">Specials</a>
+      <a href="#learn">Learn</a>
+      <a href="#visit">Visit</a>
+      <a href="#faq">FAQ</a>
+      <a href="tel:+15807680326">Call (580) 768-0326</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <p class="eyebrow">Medical marijuana dispensary · McAlester, OK</p>
+        <h1><span>Top-shelf bud,</span><span><em>any hour,</em></span><span>any day.</span></h1>
+        <p class="lede">Lab-tested flower, edibles, vapes and concentrates for Oklahoma medical patients. Reserve online and pick up whenever it suits you, day or night.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-lime" href="#shop">Shop the menu</a>
+          <a class="btn btn-outline-light" href="#visit">Get directions</a>
+        </div>
+        <ul class="proof">
+          <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span id="hero-clock">Open 24/7</span></li>
+          <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6M10 3v6L5 18a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3L14 9V3"/><path d="M7.5 14h9"/></svg>Lab-tested every lot</li>
+          <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>Order ahead for pickup</li>
+        </ul>
+      </div>
+
+      <article class="lot" aria-label="Featured lot">
+        <div class="lot-head">
+          <div>
+            <p class="tag">Featured lot</p>
+            <h2>Wedding Cake</h2>
+            <p class="sub">Trap House Reserve · Indoor flower</p>
+          </div>
+          <span class="chip" data-t="hybrid">Hybrid</span>
+        </div>
+        <div class="stats">
+          <div><b>25.6%</b><span>THC</span></div>
+          <div><b>&lt;0.1%</b><span>CBD</span></div>
+          <div><b>2.9%</b><span>Terpenes</span></div>
+        </div>
+        <ul class="terp-bars">
+          <li><span>Limonene</span><span class="bar"><i style="--tc:var(--t-limonene);width:82%"></i></span><span class="pct">0.82%</span></li>
+          <li><span>Caryophyllene</span><span class="bar"><i style="--tc:var(--t-caryophyllene);width:71%"></i></span><span class="pct">0.71%</span></li>
+          <li><span>Myrcene</span><span class="bar"><i style="--tc:var(--t-myrcene);width:54%"></i></span><span class="pct">0.54%</span></li>
+          <li><span>Linalool</span><span class="bar"><i style="--tc:var(--t-linalool);width:31%"></i></span><span class="pct">0.31%</span></li>
+        </ul>
+        <div class="lot-meta">
+          <span>Lot <b>BT-2611-07</b></span>
+          <span>Harvested <b>Oct 28, 2026</b></span>
+          <span>Cured <b>21 days</b></span>
+          <span>Lab results <b>Passed</b></span>
+        </div>
+        <div class="lot-foot">
+          <span class="price">$42<small>/ 3.5 g</small></span>
+          <button class="btn btn-brand" type="button" id="feature-add">Reserve an eighth</button>
+        </div>
+      </article>
+    </div>
+    <svg class="treeline" viewBox="0 0 1440 170" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+      <path class="back" id="trees-back" d=""/>
+      <path class="front" id="trees-front" d=""/>
+    </svg>
+  </section>
+
+  <section class="section" id="shop" style="padding-bottom:0">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Shop by category</p>
+          <h2 class="h2">Find your fix</h2>
+        </div>
+        <p>Every product on our shelf has a lot number you can match to its lab results. Ask at the counter to see the full certificate.</p>
+      </div>
+      <div class="cats" id="cats"></div>
+    </div>
+  </section>
+
+  <section class="section" id="menu">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Today's menu</p>
+          <h2 class="h2">On the shelf now</h2>
+        </div>
+        <p>Prices exclude Oklahoma's 7% medical marijuana tax and sales tax, which are added at the counter.</p>
+      </div>
+
+      <div class="toolbar">
+        <div class="tabs" id="tabs" role="group" aria-label="Category"></div>
+        <div class="filters">
+          <div class="type-filter" id="type-filter" role="group" aria-label="Strain type">
+            <button class="chip" data-t="indica" aria-pressed="true" type="button">Indica</button>
+            <button class="chip" data-t="hybrid" aria-pressed="true" type="button">Hybrid</button>
+            <button class="chip" data-t="sativa" aria-pressed="true" type="button">Sativa</button>
+            <button class="chip" data-t="cbd" aria-pressed="true" type="button">CBD-rich</button>
+          </div>
+          <label class="search" for="q">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input id="q" type="search" placeholder="Search strains, terpenes or effects" autocomplete="off">
+          </label>
+          <select class="sort" id="sort" aria-label="Sort">
+            <option value="featured">Sort: Featured</option>
+            <option value="thc">Potency: high to low</option>
+            <option value="price">Price: low to high</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <section class="section specials" id="specials">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Daily specials</p>
+          <h2 class="h2">A deal every day of the week</h2>
+        </div>
+        <p>Specials run all 24 hours of their day. Tap a day to see the products it covers.</p>
+      </div>
+      <div class="week-wrap"><div class="week" id="week"></div></div>
+      <p class="fine">Discounts are applied at the counter and can't be combined with other offers.</p>
+    </div>
+  </section>
+
+  <section class="section learn" id="learn" style="border-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Learn</p>
+          <h2 class="h2">Read the label like a budtender</h2>
+        </div>
+        <p>THC percentage tells you strength. Terpenes shape the aroma and, for many people, how a strain feels. These are the ones you'll see most on our labels.</p>
+      </div>
+      <div class="learn-grid">
+        <div class="terp-guide" id="terp-guide"></div>
+        <div class="dose">
+          <h3>Start low, go slow</h3>
+          <p>How quickly you feel it depends on how you take it. Edibles take the longest, so wait before taking more.</p>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>Method</th><th>Kicks in</th><th>Lasts</th></tr></thead>
+              <tbody>
+                <tr><td>Flower or pre-roll</td><td class="n">2–10 min</td><td class="n">1–3 hr</td></tr>
+                <tr><td>Vape cartridge</td><td class="n">2–10 min</td><td class="n">1–3 hr</td></tr>
+                <tr><td>Tincture under the tongue</td><td class="n">15–45 min</td><td class="n">2–4 hr</td></tr>
+                <tr><td>Edible</td><td class="n">30 min–2 hr</td><td class="n">4–8 hr</td></tr>
+                <tr><td>Topical balm</td><td class="n">Local only</td><td class="n">1–2 hr</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="tip"><strong>New to edibles?</strong> Start with 2.5–5 mg of THC and wait a full two hours before having more.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="visit">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Visit</p>
+          <h2 class="h2">Come see Bigfoot</h2>
+        </div>
+        <p>Reserve online and skip the wait, or walk in any time and talk it through with a budtender.</p>
+      </div>
+      <div class="visit-grid">
+        <div class="place">
+          <canvas id="topo" aria-hidden="true"></canvas>
+          <div>
+            <p class="eyebrow">Find us</p>
+            <address id="addr-text">1430 S George Nigh Expy<br>McAlester, OK 74501</address>
+          </div>
+          <div style="display:grid;gap:18px">
+            <p class="clock"><i aria-hidden="true"></i><span id="visit-clock">Open now</span></p>
+            <div class="row">
+              <a class="btn btn-lime" href="https://www.google.com/maps/search/?api=1&amp;query=1430+S+George+Nigh+Expy+McAlester+OK+74501">Open in Google Maps</a>
+              <button class="btn btn-outline-light" type="button" data-copy="1430 S George Nigh Expy, McAlester, OK 74501" data-target="#addr-text">Copy address</button>
+            </div>
+          </div>
+        </div>
+        <div class="info">
+          <div class="panel">
+            <h3>Hours</h3>
+            <div class="hours-big"><b>24/7</b><span>Open every hour of every day</span></div>
+          </div>
+          <div class="panel">
+            <h3>Contact</h3>
+            <div class="contact">
+              <div><a href="tel:+15807680326" id="phone-text">(580) 768-0326</a><button class="copy" type="button" data-copy="(580) 768-0326" data-target="#phone-text">Copy</button></div>
+            </div>
+          </div>
+          <div class="panel">
+            <h3>What to bring</h3>
+            <ul class="bring">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>Your OMMA patient or caregiver license</span></li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>A valid, unexpired government photo ID</span></li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>Cash or debit to pay</span></li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>Your reservation number if you ordered ahead</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq" style="padding-top:0">
+    <div class="wrap faq-grid">
+      <div class="faq-side">
+        <p class="eyebrow">FAQ</p>
+        <h2 class="h2">Before you come in</h2>
+        <p>Still have a question? Give us a call. Someone picks up at any hour.</p>
+        <a class="btn btn-line" href="tel:+15807680326">Call (580) 768-0326</a>
+      </div>
+      <div>
+        <details open><summary>Do I need a medical card?</summary><p>Yes. Oklahoma only allows dispensary sales to patients and caregivers with a valid OMMA license. You can apply online with the Oklahoma Medical Marijuana Authority. Out-of-state patients can apply for a temporary license.</p></details>
+        <details><summary>Are you really open 24 hours?</summary><p>Yes. Walk in or pick up an order any time, day or night, seven days a week.</p></details>
+        <details><summary>How much can I buy?</summary><p>Oklahoma patients can carry up to 3 ounces of flower, 1 ounce of concentrate and 72 ounces of edibles. Our register checks your limits at checkout.</p></details>
+        <details><summary>Can I pay with a credit card?</summary><p>Cannabis is still illegal under federal law, so card networks don't process credit purchases. We take cash and debit.</p></details>
+        <details><summary>How long do you hold a reservation?</summary><p>We hold pickup orders for 24 hours. After that the items go back on the shelf.</p></details>
+        <details><summary>Can I return a product?</summary><p>State rules don't allow returns of opened cannabis products. If a cartridge or device is defective, bring it back within 7 days with your receipt and we'll exchange it.</p></details>
+        <details><summary>Can I consume on site?</summary><p>No. State law prohibits consumption at the store and in public places, including the parking lot.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo" href="#top"><img src="bigfoot-logo.png" width="48" height="48" alt=""><span><b>Bigfoot's Trap House</b><small>McAlester, Oklahoma</small></span></a>
+        <p class="tagline">You never saw me, bro.</p>
+        <p style="margin-top:14px">OMMA license # (add yours)</p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>1430 S George Nigh Expy<br>McAlester, OK 74501</li>
+          <li><a href="tel:+15807680326">(580) 768-0326</a></li>
+          <li>Open 24 hours, 7 days</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul id="foot-cats"></ul>
+      </div>
+      <div>
+        <h4>Patients</h4>
+        <ul>
+          <li><a href="https://oklahoma.gov/omma.html">Get an OMMA license</a></li>
+          <li><a href="#specials">Daily specials</a></li>
+          <li><a href="#learn">Dosing guide</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="warnings">
+      <strong>Warnings</strong>
+      <p>For use only by Oklahoma medical marijuana patients and caregivers with a valid license. Keep out of reach of children and pets.</p>
+      <p>Cannabis can impair concentration, coordination and judgment. Do not drive or operate machinery under its influence.</p>
+      <p>Using cannabis during pregnancy or while breastfeeding may be harmful. Consult a doctor before use.</p>
+      <p>Cannabis remains illegal under federal law. Do not take cannabis products across state lines.</p>
+    </div>
+    <div class="legal">
+      <span>Concept mockup. This is not the official Bigfoot's Trap House website.</span>
+      <span>Products, prices and specials shown are samples.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Bag drawer -->
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" hidden role="dialog" aria-modal="true" aria-labelledby="bag-title">
+  <div class="drawer-head">
+    <h2 id="bag-title">Pickup bag</h2>
+    <button class="x" id="bag-close" type="button" aria-label="Close bag">×</button>
+  </div>
+  <div class="drawer-body" id="drawer-body"></div>
+</aside>
+
+<div class="toast" id="toast" hidden role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  const TERPS = {
+    myrcene:      {name:"Myrcene",      aroma:"Earthy, musky, ripe fruit. Common in strains people reach for at night.", also:"Mango, hops, lemongrass"},
+    limonene:     {name:"Limonene",     aroma:"Bright citrus. Often found in strains described as upbeat.", also:"Lemon peel, orange rind"},
+    caryophyllene:{name:"Caryophyllene",aroma:"Peppery and spicy, with a woody finish.", also:"Black pepper, cloves"},
+    pinene:       {name:"Pinene",       aroma:"Fresh pine and sharp herbs. Associated with a clear head.", also:"Pine needles, rosemary"},
+    linalool:     {name:"Linalool",     aroma:"Floral and soft. Shows up in many calming strains.", also:"Lavender, birch"},
+    terpinolene:  {name:"Terpinolene",  aroma:"Fruity, herbal and a little piney. Less common, very distinct.", also:"Lilac, apples, nutmeg"},
+    humulene:     {name:"Humulene",     aroma:"Hoppy and woody, slightly bitter.", also:"Hops, sage, ginseng"}
+  };
+
+  const ICONS = {
+    flower:'<path d="M12 21v-7"/><path d="M12 14c-4.5 0-7-3-7-6.5 3.2 0 5.6 1.4 7 3.6 1.4-2.2 3.8-3.6 7-3.6 0 3.5-2.5 6.5-7 6.5z"/><path d="M12 11c-1.8-2.2-1.8-5 0-8 1.8 3 1.8 5.8 0 8z"/>',
+    preroll:'<path d="M4.5 19.5 16 8l3 3L7.5 22.5z" transform="translate(-1 -2)"/><path d="m15 6 3 3"/><path d="M19 3c1 1 1 2 0 3"/>',
+    edible:'<rect x="6" y="4" width="12" height="16" rx="6"/><path d="M9.5 9h.01M14.5 9h.01M9.5 14c1.5 1.3 3.5 1.3 5 0"/>',
+    vape:'<rect x="9" y="2" width="6" height="4" rx="1"/><path d="M8 6h8v13a3 3 0 0 1-3 3h-2a3 3 0 0 1-3-3z"/><path d="M8 12h8"/>',
+    concentrate:'<path d="M12 3s6.5 7 6.5 11.5a6.5 6.5 0 0 1-13 0C5.5 10 12 3 12 3z"/><path d="M9 15a3 3 0 0 0 3 3"/>',
+    wellness:'<path d="m14 3 7 7"/><path d="m17.5 6.5-9 9-3.5 1 1-3.5 9-9"/><path d="m6 18-3 3"/>'
+  };
+  const icon = (k, s=24) => `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[k]}</svg>`;
+
+  const CATS = [
+    {id:"all", name:"All"},
+    {id:"flower", name:"Flower"},
+    {id:"preroll", name:"Pre-rolls"},
+    {id:"edible", name:"Edibles"},
+    {id:"vape", name:"Vapes"},
+    {id:"concentrate", name:"Concentrates"},
+    {id:"wellness", name:"Tinctures & topicals"}
+  ];
+
+  // unit "%" = flower-style potency; unit "mg" = dosed products, with `per` describing the dose.
+  const P = [
+    {id:"wc", cat:"flower", name:"Wedding Cake", brand:"Trap House Reserve · Indoor", type:"hybrid", thc:25.6, cbd:0.05, unit:"%", lot:"BT-2611-07", terps:["limonene","caryophyllene","myrcene"], badge:"Featured lot", opts:[["3.5 g",42],["7 g",78],["14 g",145]], tags:"relaxing dessert sweet vanilla"},
+    {id:"bd", cat:"flower", name:"Blue Dream", brand:"Trap House Reserve · Greenhouse", type:"hybrid", thc:21.4, cbd:0.1, unit:"%", lot:"BT-2611-03", terps:["myrcene","pinene","caryophyllene"], badge:"Staff pick", opts:[["3.5 g",35],["7 g",65],["14 g",120],["28 g",220]], tags:"berry balanced daytime"},
+    {id:"nl", cat:"flower", name:"Northern Lights", brand:"Cedar Ridge Growers · Indoor", type:"indica", thc:18.9, cbd:0.2, unit:"%", lot:"CR-2610-22", terps:["myrcene","caryophyllene","limonene"], opts:[["3.5 g",32],["7 g",60],["14 g",110]], tags:"sleep night earthy calm"},
+    {id:"dp", cat:"flower", name:"Durban Poison", brand:"Trap House Reserve · Sun-grown", type:"sativa", thc:23.1, cbd:0.1, unit:"%", lot:"BT-2610-15", terps:["terpinolene","pinene","myrcene"], badge:"New", opts:[["3.5 g",30],["7 g",55],["14 g",100]], tags:"energizing sweet anise focus"},
+    {id:"hq", cat:"flower", name:"Harlequin", brand:"Cedar Ridge Growers · Greenhouse", type:"cbd", thc:6.2, cbd:11.8, unit:"%", lot:"CR-2611-01", terps:["myrcene","pinene","caryophyllene"], opts:[["3.5 g",28],["7 g",52]], tags:"cbd mellow clear low thc mango"},
+    {id:"sd", cat:"preroll", name:"Sour Diesel", brand:"Trap House Reserve · 1 g pre-roll", type:"sativa", thc:20.2, cbd:0.1, unit:"%", lot:"BT-2611-11", terps:["caryophyllene","myrcene","limonene"], opts:[["1 × 1 g",12],["5 × 0.5 g",30]], tags:"fuel energetic daytime"},
+    {id:"gdp", cat:"preroll", name:"Granddaddy Purple", brand:"Lowlight · Infused pre-roll", type:"indica", thc:34.0, cbd:0.1, unit:"%", lot:"LL-2610-40", terps:["myrcene","caryophyllene","pinene"], badge:"Low stock", opts:[["1 × 1 g",18],["2 × 1 g",32]], tags:"grape berry infused strong sleep"},
+    {id:"mb", cat:"edible", name:"Marionberry Gummies", brand:"Orchard Row · 10 pieces", type:"hybrid", thc:10, cbd:0, unit:"mg", per:"THC per piece", pack:"100 mg THC per pack", lot:"OR-2611-02", terps:["limonene","myrcene"], badge:"Staff pick", opts:[["10 pack",22]], tags:"gummy fruit vegan"},
+    {id:"dc", cat:"edible", name:"Dark Chocolate 1:1", brand:"Orchard Row · 10 squares", type:"cbd", thc:5, cbd:5, unit:"mg", per:"THC + 5 mg CBD per square", pack:"50 mg THC per bar", lot:"OR-2610-19", terps:["caryophyllene"], opts:[["1 bar",24]], tags:"chocolate balanced cbd beginner"},
+    {id:"lm", cat:"edible", name:"Lemon Ginger Mints", brand:"Quietleaf · 20 mints", type:"sativa", thc:2.5, cbd:0, unit:"mg", per:"THC per mint", pack:"50 mg THC per tin", lot:"QL-2611-05", terps:["limonene"], badge:"New", opts:[["20 ct tin",20]], tags:"microdose mint beginner citrus"},
+    {id:"jh", cat:"vape", name:"Jack Herer", brand:"Lowlight · Live resin cart", type:"sativa", thc:84.2, cbd:0.4, unit:"%", lot:"LL-2611-08", terps:["terpinolene","pinene","caryophyllene"], opts:[["0.5 g",40],["1 g",70]], tags:"510 thread cart creative piney"},
+    {id:"gsc", cat:"vape", name:"GSC", brand:"Quietleaf · All-in-one", type:"hybrid", thc:89.5, cbd:0.2, unit:"%", lot:"QL-2610-33", terps:["caryophyllene","limonene","humulene"], opts:[["0.5 g",35],["1 g",60]], tags:"disposable cookies sweet"},
+    {id:"gl", cat:"concentrate", name:"Gelato Live Rosin", brand:"Cedar Ridge Growers · Cold cure", type:"hybrid", thc:76.3, cbd:0.1, unit:"%", lot:"CR-2611-04", terps:["limonene","caryophyllene","linalool"], badge:"Small batch", opts:[["1 g",60]], tags:"solventless rosin dab creamy"},
+    {id:"tg", cat:"concentrate", name:"Tangie Badder", brand:"Lowlight · Hydrocarbon", type:"sativa", thc:79.8, cbd:0.2, unit:"%", lot:"LL-2611-02", terps:["terpinolene","limonene","myrcene"], opts:[["1 g",38]], tags:"dab orange citrus wax"},
+    {id:"tn", cat:"wellness", name:"Calm 20:1 Tincture", brand:"Quietleaf · 30 ml dropper", type:"cbd", thc:1, cbd:20, unit:"mg", per:"CBD + 1 mg THC per ml", pack:"600 mg CBD per bottle", lot:"QL-2610-12", terps:["linalool","myrcene"], opts:[["30 ml",45]], tags:"tincture drops cbd sublingual"},
+    {id:"bm", cat:"wellness", name:"Arnica Relief Balm", brand:"Orchard Row · 2 oz jar", type:"cbd", thc:100, cbd:400, unit:"mg", per:"CBD + 100 mg THC per jar", pack:"Topical, non-intoxicating", lot:"OR-2611-09", terps:["caryophyllene","pinene"], opts:[["2 oz",38]], tags:"topical balm muscles skin"}
+  ];
+  const TYPE_NAME = {indica:"Indica", sativa:"Sativa", hybrid:"Hybrid", cbd:"CBD-rich"};
+
+  // Sample weekly specials (index 0 = Sunday)
+  const SPECIALS = [
+    {name:"Self-Care Sunday", deal:"15% off tinctures and topicals", cat:"wellness"},
+    {name:"Munchie Monday",   deal:"15% off all edibles", cat:"edible"},
+    {name:"Terp Tuesday",     deal:"15% off concentrates", cat:"concentrate"},
+    {name:"Pre-roll Wednesday", deal:"Buy 2 pre-rolls, get the 3rd half off", cat:"preroll"},
+    {name:"Cart Thursday",    deal:"$5 off any vape cart or disposable", cat:"vape"},
+    {name:"Fresh Friday",     deal:"New flower drops hit the shelf", cat:"flower"},
+    {name:"Sasquatch Saturday", deal:"20% off Trap House Reserve flower", cat:"flower"}
+  ];
+  const DAYS = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+
+  const $ = s => document.querySelector(s);
+  const money = n => "$" + n.toFixed(2).replace(/\.00$/, "");
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const store = {
+    get(k, d){ try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch(e){ return d; } },
+    set(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} }
+  };
+
+  /* Patient gate */
+  const gate = $("#gate");
+  function closeGate(){ gate.hidden = true; document.body.classList.remove("locked"); }
+  if (store.get("bth-patient-ok", false)) closeGate(); else document.body.classList.add("locked");
+  $("#gate-yes").addEventListener("click", () => { store.set("bth-patient-ok", true); closeGate(); });
+  $("#gate-no").addEventListener("click", () => { $("#gate-ask").hidden = true; $("#gate-denied").hidden = false; });
+  $("#gate-back").addEventListener("click", () => { $("#gate-ask").hidden = false; $("#gate-denied").hidden = true; });
+
+  /* Mobile nav */
+  const mnav = $("#mnav"), menuBtn = $("#menu-btn");
+  menuBtn.addEventListener("click", () => { const open = mnav.hidden; mnav.hidden = !open; menuBtn.setAttribute("aria-expanded", open); });
+  mnav.addEventListener("click", e => { if (e.target.closest("a")) { mnav.hidden = true; menuBtn.setAttribute("aria-expanded", "false"); } });
+
+  /* Live clock: the store is open around the clock */
+  function tick(){
+    const t = new Date().toLocaleTimeString([], {hour:"numeric", minute:"2-digit"});
+    $("#hero-clock").textContent = `Open now · it's ${t}`;
+    $("#visit-clock").textContent = `Open right now · ${t} your time`;
+  }
+  tick(); setInterval(tick, 30000);
+
+  /* Treeline */
+  function rng(seed){ return function(){ seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+  function trees(seed, minH, maxH, W=1440, H=170){
+    const r = rng(seed); let d = "", x = -20;
+    while (x < W + 20){
+      const h = minH + r() * (maxH - minH), w = h * (0.42 + r() * 0.12), b = H;
+      const pts = [[x-w/2,b],[x-w*.2,b-h*.38],[x-w*.4,b-h*.38],[x-w*.14,b-h*.66],[x-w*.3,b-h*.66],[x,b-h],[x+w*.3,b-h*.66],[x+w*.14,b-h*.66],[x+w*.4,b-h*.38],[x+w*.2,b-h*.38],[x+w/2,b]];
+      d += "M" + pts.map(p => p[0].toFixed(1) + " " + p[1].toFixed(1)).join("L") + "Z";
+      x += w * (0.42 + r() * 0.36);
+    }
+    return d + `M0 ${H-8}H${W}V${H}H0Z`;
+  }
+  $("#trees-back").setAttribute("d", trees(11, 70, 160));
+  $("#trees-front").setAttribute("d", trees(4, 38, 96));
+
+  /* Topographic lines behind the address card */
+  function drawTopo(){
+    const c = $("#topo"); if (!c) return;
+    const box = c.getBoundingClientRect(), dpr = Math.min(window.devicePixelRatio || 1, 2);
+    if (!box.width) return;
+    c.width = box.width * dpr; c.height = box.height * dpr;
+    const g = c.getContext("2d"); g.scale(dpr, dpr);
+    g.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue("--hero-line").trim() || "#3A7333";
+    g.lineWidth = 1.2;
+    const cx = box.width * 0.78, cy = box.height * 0.28;
+    for (let k = 1; k <= 16; k++){
+      g.beginPath();
+      for (let a = 0; a <= Math.PI * 2 + 0.01; a += 0.05){
+        const wob = 1 + 0.18 * Math.sin(a * 3 + k * 0.6) + 0.08 * Math.cos(a * 5 - k);
+        const rr = k * 26 * wob;
+        const x = cx + Math.cos(a) * rr * 1.25, y = cy + Math.sin(a) * rr;
+        a === 0 ? g.moveTo(x, y) : g.lineTo(x, y);
+      }
+      g.stroke();
+    }
+    // map pin
+    g.fillStyle = getComputedStyle(document.documentElement).getPropertyValue("--orange").trim() || "#C75F24";
+    g.beginPath(); g.arc(cx, cy, 9, 0, Math.PI * 2); g.fill();
+    g.fillStyle = "#FFF4E4"; g.beginPath(); g.arc(cx, cy, 3.5, 0, Math.PI * 2); g.fill();
+  }
+  drawTopo();
+  let rt; window.addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(drawTopo, 150); });
+  try { matchMedia("(prefers-color-scheme: dark)").addEventListener("change", drawTopo); } catch(e){}
+
+  /* Terpene guide */
+  $("#terp-guide").innerHTML = Object.entries(TERPS).map(([k,t]) =>
+    `<div class="terp"><h3><i style="--tc:var(--t-${k})"></i>${t.name}</h3><p>${t.aroma}</p><p class="also"><span>Also in:</span> ${t.also}</p></div>`
+  ).join("");
+
+  /* Category tiles + footer links */
+  const catTiles = CATS.filter(c => c.id !== "all");
+  $("#cats").innerHTML = catTiles.map(c => {
+    const items = P.filter(p => p.cat === c.id);
+    const from = Math.min(...items.map(p => p.opts[0][1]));
+    return `<button class="cat" type="button" data-go="${c.id}"><span class="ic">${icon(c.id, 26)}</span><span class="txt"><b>${c.name}</b><span class="meta">${items.length} products · from ${money(from)}</span></span></button>`;
+  }).join("");
+  $("#foot-cats").innerHTML = catTiles.map(c => `<li><a href="#menu" data-go="${c.id}">${c.name}</a></li>`).join("");
+
+  /* Specials */
+  function renderWeek(){
+    const today = new Date().getDay();
+    const order = [1,2,3,4,5,6,0];
+    $("#week").innerHTML = order.map(d => {
+      const s = SPECIALS[d];
+      return `<button class="day${d===today?" today":""}" type="button" data-go="${s.cat}"><span class="dn"><span>${DAYS[d]}</span>${d===today?"<span>Today</span>":""}</span><b>${s.name}</b><span class="d">${s.deal}</span></button>`;
+    }).join("");
+  }
+  renderWeek();
+
+  /* Menu */
+  const state = { cat:"all", types:new Set(["indica","hybrid","sativa","cbd"]), q:"", sort:"featured", size:{} };
+
+  document.addEventListener("click", e => {
+    const go = e.target.closest("[data-go]"); if (!go) return;
+    e.preventDefault();
+    state.cat = go.dataset.go; state.q = ""; $("#q").value = "";
+    renderTabs(); renderGrid();
+    $("#menu").scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"});
+  });
+
+  function renderTabs(){
+    $("#tabs").innerHTML = CATS.map(c => {
+      const n = c.id === "all" ? P.length : P.filter(p => p.cat === c.id).length;
+      return `<button class="tab" type="button" data-cat="${c.id}" aria-pressed="${state.cat===c.id}">${c.name}<span class="n">${n}</span></button>`;
+    }).join("");
+  }
+
+  function face(p){
+    if (p.unit === "%"){
+      const cbdMain = p.type === "cbd";
+      const main = cbdMain ? p.cbd : p.thc;
+      return `<b>${main.toFixed(1)}%</b><span>${cbdMain ? "CBD" : "THC"}</span>`;
+    }
+    const main = p.type === "cbd" && p.cat === "wellness" ? p.cbd : p.thc;
+    return `<b>${main} mg</b><span>${p.per.split(" ")[0]}</span>`;
+  }
+  function facts(p){
+    if (p.unit === "%"){
+      const other = p.type === "cbd" ? `THC <b>${p.thc.toFixed(1)}%</b>` : `CBD <b>${p.cbd < 0.1 ? "&lt;0.1" : p.cbd.toFixed(1)}%</b>`;
+      return `<span>${other}</span><span>Lot <b>${p.lot}</b></span>`;
+    }
+    const main = p.type === "cbd" && p.cat === "wellness" ? p.cbd : p.thc;
+    return `<span><b>${main} mg</b> ${esc(p.per)}</span><span>${esc(p.pack)}</span><span>Lot <b>${p.lot}</b></span>`;
+  }
+
+  function card(p){
+    const si = state.size[p.id] || 0;
+    return `<article class="card" data-id="${p.id}" data-t="${p.type}">
+      <div class="card-face">
+        <span class="ic">${icon(p.cat, 34)}</span>
+        <div class="pot">${face(p)}</div>
+        ${p.badge ? `<span class="card-badge">${p.badge}</span>` : ""}
+      </div>
+      <div class="card-body">
+        <div class="card-title"><div><h3>${esc(p.name)}</h3><p class="brand">${esc(p.brand)}</p></div><span class="chip" data-t="${p.type}">${TYPE_NAME[p.type]}</span></div>
+        <p class="facts">${facts(p)}</p>
+        <ul class="terps" aria-label="Dominant terpenes">${p.terps.map(t => `<li><i style="--tc:var(--t-${t})"></i>${TERPS[t].name}</li>`).join("")}</ul>
+        <div class="sizes" role="group" aria-label="Size">${p.opts.map((o,i) => `<button class="size" type="button" data-size="${i}" aria-pressed="${i===si}">${o[0]}</button>`).join("")}</div>
+        <div class="buy"><span class="price">${money(p.opts[si][1])}</span><button class="add" type="button" data-add>Add to bag</button></div>
+      </div>
+    </article>`;
+  }
+
+  function filtered(){
+    const q = state.q.trim().toLowerCase();
+    let list = P.filter(p =>
+      (state.cat === "all" || p.cat === state.cat) &&
+      state.types.has(p.type) &&
+      (!q || [p.name, p.brand, p.tags, TYPE_NAME[p.type], ...p.terps].join(" ").toLowerCase().includes(q))
+    );
+    if (state.sort === "thc") list = list.slice().sort((a,b) => (b.unit === "%") - (a.unit === "%") || b.thc - a.thc);
+    if (state.sort === "price") list = list.slice().sort((a,b) => a.opts[0][1] - b.opts[0][1]);
+    return list;
+  }
+
+  function renderGrid(){
+    const list = filtered();
+    $("#grid").innerHTML = list.length ? list.map(card).join("") :
+      `<p class="empty"><b>Nothing matches those filters</b>Try another category, turn a strain type back on, or clear the search.</p>`;
+  }
+
+  $("#tabs").addEventListener("click", e => {
+    const b = e.target.closest("[data-cat]"); if (!b) return;
+    state.cat = b.dataset.cat; renderTabs(); renderGrid();
+  });
+  $("#type-filter").addEventListener("click", e => {
+    const b = e.target.closest("button"); if (!b) return;
+    const t = b.dataset.t;
+    if (state.types.has(t) && state.types.size === 1) return;
+    state.types.has(t) ? state.types.delete(t) : state.types.add(t);
+    b.setAttribute("aria-pressed", state.types.has(t));
+    renderGrid();
+  });
+  $("#q").addEventListener("input", e => { state.q = e.target.value; renderGrid(); });
+  $("#sort").addEventListener("change", e => { state.sort = e.target.value; renderGrid(); });
+
+  $("#grid").addEventListener("click", e => {
+    const c = e.target.closest(".card"); if (!c) return;
+    const p = P.find(x => x.id === c.dataset.id);
+    const sb = e.target.closest("[data-size]");
+    if (sb){
+      state.size[p.id] = +sb.dataset.size;
+      c.querySelectorAll(".size").forEach(x => x.setAttribute("aria-pressed", x === sb));
+      c.querySelector(".price").textContent = money(p.opts[+sb.dataset.size][1]);
+      return;
+    }
+    const ab = e.target.closest("[data-add]");
+    if (ab){
+      addToBag(p.id, state.size[p.id] || 0);
+      ab.textContent = "Added ✓"; ab.classList.add("done");
+      setTimeout(() => { ab.textContent = "Add to bag"; ab.classList.remove("done"); }, 1400);
+    }
+  });
+
+  /* Bag */
+  let bag = store.get("bth-bag", []).filter(l => P.some(p => p.id === l.id));
+  let confirmation = null;
+  const drawer = $("#drawer"), scrim = $("#scrim");
+
+  function addToBag(id, si){
+    const line = bag.find(l => l.id === id && l.si === si);
+    line ? line.qty++ : bag.push({id, si, qty:1});
+    confirmation = null;
+    saveBag();
+    const p = P.find(x => x.id === id);
+    toast(`${p.name} (${p.opts[si][0]}) added to your bag`);
+  }
+  function saveBag(){ store.set("bth-bag", bag); $("#bag-count").textContent = bag.reduce((n,l) => n + l.qty, 0); if (!drawer.hidden) renderBag(); }
+
+  function pickupSlots(){
+    const now = new Date(), slots = ["As soon as possible (about 15 min)"];
+    const t = new Date(now); t.setSeconds(0, 0);
+    t.setMinutes(t.getMinutes() < 30 ? 60 : 90);
+    for (let i = 0; i < 12; i++){
+      const day = t.getDate() === now.getDate() ? "Today" : "Tomorrow";
+      slots.push(`${day} at ${t.toLocaleTimeString([], {hour:"numeric", minute:"2-digit"})}`);
+      t.setMinutes(t.getMinutes() + 30);
+    }
+    return slots;
+  }
+
+  function openBag(){ renderBag(); drawer.hidden = false; scrim.hidden = false; document.body.classList.add("locked"); $("#bag-close").focus(); }
+  function closeBag(){ drawer.hidden = true; scrim.hidden = true; if (gate.hidden) document.body.classList.remove("locked"); $("#bag-open").focus(); }
+  $("#bag-open").addEventListener("click", openBag);
+  $("#bag-close").addEventListener("click", closeBag);
+  scrim.addEventListener("click", closeBag);
+  document.addEventListener("keydown", e => { if (e.key === "Escape" && !drawer.hidden) closeBag(); });
+
+  function renderBag(){
+    const body = $("#drawer-body");
+    if (confirmation){
+      body.innerHTML = `<div class="confirm"><h3>Reserved for pickup</h3>
+        <p>Order <b>${confirmation.no}</b>, ${esc(confirmation.slot.charAt(0).toLowerCase() + confirmation.slot.slice(1))}.</p>
+        <p>Bring your patient license and photo ID, and pay at the counter. Total before tax: <b>${money(confirmation.total)}</b>.</p></div>
+        <p class="demo-note"><b>Sample confirmation.</b> This mockup shows how the confirmation would look. No order was placed.</p>
+        <button class="btn btn-line" type="button" id="new-order">Start a new order</button>`;
+      $("#new-order").addEventListener("click", () => { confirmation = null; renderBag(); });
+      return;
+    }
+    if (!bag.length){
+      body.innerHTML = `<p class="bag-empty">Your bag is empty.<br>Add something from the menu to reserve it for pickup.</p>
+        <a class="btn btn-brand" href="#menu" id="to-menu">Browse the menu</a>`;
+      $("#to-menu").addEventListener("click", closeBag);
+      return;
+    }
+    const subtotal = bag.reduce((s,l) => s + P.find(p => p.id === l.id).opts[l.si][1] * l.qty, 0);
+    body.innerHTML = bag.map((l,i) => {
+      const p = P.find(x => x.id === l.id), o = p.opts[l.si];
+      return `<div class="line-item">
+        <div><div class="nm">${esc(p.name)}</div><div class="meta">${o[0]} · ${TYPE_NAME[p.type]} · Lot ${p.lot}</div></div>
+        <div class="li-price">${money(o[1] * l.qty)}</div>
+        <div class="qty" aria-label="Quantity"><button type="button" data-dec="${i}" aria-label="Remove one">−</button><span>${l.qty}</span><button type="button" data-inc="${i}" aria-label="Add one">+</button></div>
+      </div>`;
+    }).join("") + `
+      <div class="totals">
+        <div><span>Subtotal</span><span class="num">${money(subtotal)}</span></div>
+        <div style="color:var(--muted)"><span>7% medical tax + sales tax</span><span>At the counter</span></div>
+        <div class="sum"><span>Due at pickup</span><span class="num">${money(subtotal)} + tax</span></div>
+      </div>
+      <form class="pickup" id="pickup" novalidate>
+        <div class="field"><label for="pu-slot">Pickup time</label><select id="pu-slot">${pickupSlots().map(s => `<option>${s}</option>`).join("")}</select></div>
+        <p class="demo-note"><b>Mockup preview.</b> On the live site, patients would enter their name, mobile number and license confirmation here, and the order would go straight to the store.</p>
+        <button class="btn btn-brand" type="submit">Preview the confirmation</button>
+      </form>`;
+    body.querySelectorAll("[data-inc]").forEach(b => b.addEventListener("click", () => { bag[+b.dataset.inc].qty++; saveBag(); }));
+    body.querySelectorAll("[data-dec]").forEach(b => b.addEventListener("click", () => {
+      const i = +b.dataset.dec; bag[i].qty--; if (bag[i].qty <= 0) bag.splice(i,1); saveBag();
+    }));
+    $("#pickup").addEventListener("submit", e => {
+      e.preventDefault();
+      confirmation = { no: "BT-" + Math.floor(1000 + Math.random()*9000), slot: $("#pu-slot").value, total: subtotal };
+      bag = []; saveBag(); renderBag();
+    });
+  }
+
+  $("#feature-add").addEventListener("click", () => addToBag("wc", 0));
+
+  /* Copy buttons */
+  document.querySelectorAll("[data-copy]").forEach(b => b.addEventListener("click", () => {
+    const text = b.dataset.copy, label = b.textContent;
+    const done = () => { b.textContent = "Copied"; setTimeout(() => b.textContent = label, 1400); };
+    const fallback = () => {
+      const target = $(b.dataset.target); if (!target) return;
+      const r = document.createRange(); r.selectNodeContents(target);
+      const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+      toast("Selected. Press Ctrl+C or Cmd+C to copy.");
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done).catch(fallback);
+    else fallback();
+  }));
+
+  let tt;
+  function toast(t){ const el = $("#toast"); el.textContent = t; el.hidden = false; clearTimeout(tt); tt = setTimeout(() => el.hidden = true, 2400); }
+
+  renderTabs(); renderGrid(); saveBag();
+})();
+</script>
+
+</body>
+</html>
